@@ -23,3 +23,21 @@
           line-height: 1.1
           letter-spacing: -0.5px
           text-decoration: none
+          position: relative
+          z-index: 1
+
+          &:after
+            content: ''
+            width: 0
+            height: 2px
+            background-color: #fff
+            position: absolute
+            bottom: 0
+            left: 0
+            opacity: 0
+            transition: opacity 0.3s, ease 0.3s, width 0.3s, ease 0.3s
+
+          &._is-active-link
+            &:after
+              width: 100%
+              opacity: 1

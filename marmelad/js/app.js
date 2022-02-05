@@ -22,3 +22,13 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 }
 
 //=require ../_blocks/**/*.js
+
+const topPanel = document.querySelector('.js-top-panel');
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 50) {
+    topPanel.classList.add('top-panel--fixed');
+  } else {
+    topPanel.classList.remove('top-panel--fixed');
+  }
+});
