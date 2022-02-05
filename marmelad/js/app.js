@@ -21,9 +21,4 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
-/* ^^^
- * JQUERY Actions
- * ========================================================================== */
-$(function() {
-  //=require ../_blocks/**/*.js
-});
+//=require ../_blocks/**/*.js

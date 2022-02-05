@@ -181,7 +181,7 @@ const w3cValidator = {
 
 const pretty = {
   html: {
-    indent_size: 4,
+    indent_size: 2,
     indent_char: '',
     indent_with_tabs: true,
     wrap_line_length: 0,
